@@ -5,7 +5,7 @@ const fs = require('fs');
 const path = require('path');
 
 const PORT = process.env.PORT || 3000;
-const ROOT = path.join(__dirname, 'public');
+const ROOT = __dirname;
 const DATA = path.join(process.env.DATA_DIR || path.join(__dirname, 'data'), 'db.json');
 
 // ---- Database: one JSON file holding every visitor's saved data ----
